@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap');
+
+/*basic settings*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: #02270c;
+}
+
+/*selector setting*/
+::selection {
+  background-color: rgba(255, 255, 255, 1);
+  color: #000000;
+}
+
+::-moz-selection {
+  background-color: rgba(255, 255, 255, 1);
+  color: #000000;
+}
+
+/*main container setting that fills the entire screen*/
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+  color: aliceblue;
+  font-family: "Zen Old Mincho", serif;
+}
+
+/* Desktop layout */
+.left-side,
+.right-side {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+/*left side*/
+.left-side {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.self-introduction {
+  margin: 0px 100px;
+}
+
+/*email link*/
+.email-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #FFD700;
+  margin-top: 20px;
+  padding: 0px 20px;
+}
+
+.email-link img {
+  width: 24px;
+  height: 24px;
+}
+
+.email-link:hover {
+  color: #FF69B4;
+  transition:0.5s ease-in-out;
+}
+
+/*right side*/
+.right-side {
+  width: 50%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/*site introduction*/
+.introduction {
+  margin: 25px 0px;
+  margin-right: 10%;
+  padding: 10px;
+}
+
+.normal {
+  opacity: 0.75;
+}
+
+.attention {
+  font-weight: 600;
+}
+
+.game-name {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.game-name:hover {
+  color: #FF69B4;
+  transition:0.5s ease-in-out;
+}
+
+
+/*make the div work as link for each game*/
+.link-block {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.content {
+  display: flex;
+  height: fit-content;
+  box-sizing: content-box;
+  margin-bottom: 25px;
+  padding: 20px 10px;
+  width: auto;
+  margin-right: 25%;
+}
+
+.name {
+  width: 175px;
+  opacity: 0.75;
+}
+
+.brief {
+  font-size: 1.2em;
+  color: aliceblue;
+  opacity: 1;
+}
+
+.description {
+  opacity: 0.75;
+}
+
+/*game div hover animation*/
+.content:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+
+  .name {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
+
+  .brief {
+    color: #FFD700;
+    opacity: 1;
+    transition: color 0.5s ease-in-out;
+  }
+
+  .description {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+/*mobile layout*/
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .right-side h2{
+    padding-top: 0 !important;
+  }
+
+  .self-introduction {
+    margin: 0;
+  }
+
+  .self-introduction .introduction {
+    margin: 0;
+  }
+
+  .content {
+    margin: 0;
+  }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ　アウンカウンミャッ</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-side">
+      <div class="self-introduction">
+        <p style="font-size: 1.75em; text-align: center; font-weight: 800; margin-bottom: 50px;">こんにちは、<br>アウンカウンミャッです
+        </p>
+        <p>
+          将来、ソフトウェアエンジニアを目指しているプログラマーです。<br>
+          現在、日本電子専門学校情報システム開発科の2年生で、Javaプログラミング、システム設計、そしてウェブ開発を学んでいます。主に、Java、HTML、CSS、PHP、SQLを使用しています。
+          今後、ソフトウェアエンジニアとして成長できる機会を探しています。<br>
+          コードを書くこと以外では、戦略ゲームやパズルゲームを楽しむことが好きです。<br>
+          どうぞよろしくお願い致します。</p>
+        <div style="display: flex; justify-content: center;">
+          <a href="mailto:24jy0201@jec.ac.jp" target="_blank" class="email-link">
+            学校用メールアドレス
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Gmail" width="24" height="24">
+          </a>
+          <a href="mailto:kaungmyat.aung217@gmail.com" target="_blank" class="email-link">
+            個人メールアドレス
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Gmail" width="24" height="24">
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="right-side">
+      <h2 style="text-align: center; padding-top: 50px;">このサイトについて</h2>
+      <p class="introduction">
+        <!--Site Introduction-->
+        <span class="normal">このサイトは、</span>
+        <span class="attention">HTML</span>
+        <span class="normal">、</span>
+        <span class="attention">CSS</span>
+        <span class="normal">、</span>
+        <span class="attention">javascript</span>
+        <span class="normal">を使って作られたものです。</span>
+        <br>
+        <span class="normal">スマートフォンにも対応していますが、PCでの閲覧をおすすめします。</span><br><br>
+        <span class="normal">私は若者で、普段ゲームをプレイしていますが、その裏で何がどのように動いているのか、
+          どのような設計がされているのかに非常に興味を持ちました。
+          そのため、空いている時間には自分で何かを作ってみたいと思うようになりました。
+          ゲーム制作というとデザインやフロントエンドのイメージが強いかもしれませんが、実際には約80%が設計とコーディングです。
+        </span>
+        <span class="normal">以下は、私が自由時間に作成したゲームです。</span>
+        <span class="attention">GODOTエンジン</span>
+        <span class="normal">を使ってゲームを制作しており、とても楽しい時間を過ごしています。GODOTエンジンでは</span>
+        <span class="attention">GDScript</span>
+        <span class="normal">というプログラミング言語を使用しますが、</span>
+        <span class="attention">Python</span>
+        <span class="normal">とほぼ同じ文法です。</span>
+        <span class="normal">ゲーム用のスプライト（画像）は、</span>
+        <span class="attention">Aseprite </span>
+        <span class="normal">というエディターソフトでピクセルアートとして作成・修正しました。</span>
+        <br><br>
+        <span class="normal">ぜひゲームを試して遊んでください～～～🎵🎶</span>
+        <br><br>
+        <!--explanation about minsweeper-->
+        <a href="./index.html#minesweeper" class="game-name">マインスイーパゲーム</a>
+        <span class="normal">は、配列に関するアルゴリズムと周囲のマスのチェックを重視した内容になっています。
+          爆弾💣の位置はランダムで、難易度も選択可能です。さらに、アニメーションにも挑戦してみたプロジェクトです。
+          これが一番古いプロジェクトです。
+        </span>
+        <br><br>
+        <a href="./index.html#anglerstale" class="game-name">釣り人の物語</a>
+        <span class="normal">は、長く遊べるように、セーブ機能に挑戦してみたゲームです。
+          プレイヤーにとって見やすく、優しい画面になるようにもしっかり工夫しました。
+          しかし、GitHubではセーブ機能が対応していないため、一部の中身を修正しましたが、
+          それでもアルゴリズムが分かるような内容になっています。
+        </span>
+        <br><br>
+        <a href="./index.html#tinywarrior" class="game-name">釣り人の物語</a>
+        <span class="normal">は、Javaと同様に、オブジェクトごとに親クラスを作成し、
+          それぞれのインスタンスを生成できるように工夫したプロジェクトです。
+          ゲーム内では、レベルが異なっていても一つのスクリプトで動作するように設計しました。
+          コンストラクタやオーバーライドの機能も活用しています。
+        </span>
+      </p>
+
+
+      <a id="minesweeper" href="http://kioh21.github.io/mine_sweeper/" target="_blank" class="link-block">
+        <div class="content" style="margin-top: 25px;">
+          <div class="name">
+            <p>Minesweeper</p>
+          </div>
+          <div>
+            <p class="brief">古典的なマインスイーパーゲーム</p>
+            <p class="description">担任の先生に触発されて挑戦して作てみたゲーム</p>
+          </div>
+        </div>
+      </a>
+
+      <a id="anglerstale" href="https://kioh21.github.io/Angler-s-Tale/" target="_blank" class="link-block">
+        <div class="content" style="margin-top: 25px;">
+          <div class="name">
+            <p>Angler's Tale</p>
+          </div>
+          <div>
+            <p class="brief">タイミングが大事な実績集めゲーム</p>
+            <p class="description">友達が作ってくれたBGMを使って作った思い出のプロジェクト</p>
+          </div>
+        </div>
+      </a>
+
+      <a id="tinywarrior" href="https://kioh21.github.io/Tiny-Warrior/" target="_blank" class="link-block">
+        <div class="content" style="margin-top: 25px;">
+          <div class="name">
+            <p>minesweeper</p>
+          </div>
+          <div>
+            <p class="brief">横スクロール型パズルアクションゲーム</p>
+            <p class="description">オブジェクト指向でインスタンスをたくさん使った<br>自慢のプロジェクト</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
